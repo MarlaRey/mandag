@@ -8,24 +8,24 @@ let myPartArray = ['partElement1', 'partElement2', 'PartElement3'];
 //.........................................................
 // opgave 1 tilføj element4 til enden myArray
 
-// din kode her...
+myArray.push(element4)
 console.log(myArray);
 
 // opgave 1 fjern element4 igen
 
-// din kode her...
+myArray.pop();
 console.log(myArray);
 
 //.........................................................
 
 // opgave 2 tilføj element4 til starten myArray
 
-// din kode her...
+myArray.unshift(element4);
 console.log(myArray);
 
 // opgave 2 fjern element4 igen
 
-// din kode her...
+myArray.shift[element4]
 console.log(myArray);
 
 //.........................................................
@@ -38,15 +38,15 @@ let myVegetables = ['salat', 'blomkål', 'spidskål', 'agurk'];
  tilføj mandarin og fersken efter pære i myFruits
  */
 
-// din kode her...
 
-myFruits.splice(2, 0, "mandarin", "fersken");
+
+myFruits.splice(1, 0, "mandarin", "fersken");
 
 console.log(myFruits);
 
 // opgave 3 fjern mandarin og fersken igen
 
-// din kode her...
+
 myFruits.splice(2, 2);
 
 console.log(myFruits);
@@ -57,7 +57,8 @@ console.log(myFruits);
 træk blomkål og spidskål ud af arrayen myVegetables
 og ind i en ny array der hedder myCabbage*/
 
-// din kode her...
+let myVegetables = ['salat', 'blomkål', 'spidskål', 'agurk'];
+let myCabbage = myVegetables.slice(1,2)
 
 
 
@@ -67,8 +68,9 @@ console.log(myCabbage);
 /* opgave 5 concat()
  sæt arrays myFruits og myVegetables sammen i en ny array der hedder myYummies
  */
-
-
+ let myFruits = ['æble', 'pære', 'banan', 'appelsin', 'citron'];
+ let myVegetables = ['salat', 'blomkål', 'spidskål', 'agurk'];
+ let myYummies = myFruits.concat(myVegetables);
 // din kode her...
 
 
@@ -82,7 +84,7 @@ console.log(myYummies);
  */
 
 
-// din kode her...
+myYummies.sort();
 
 
 
@@ -92,8 +94,8 @@ console.log(myYummies);
  vend rækkefølgen på  array  myYummies fra opgave 6
  */
 
+myYummies.reverse();
 
-// din kode her...
 
 console.log(myYummies);
 
